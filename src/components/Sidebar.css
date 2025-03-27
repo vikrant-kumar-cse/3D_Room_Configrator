@@ -1,0 +1,116 @@
+/* 🎨 Sidebar Styling */
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: linear-gradient(to bottom, #ffffff, #f8f8f8);
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    overflow-y: auto;
+}
+
+
+/* 🔥 Title Styling */
+
+.sidebar-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+
+/* 🔍 Search Box */
+
+.search-box {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 15px;
+}
+
+
+/* 🔍 Search Focus Effect */
+
+.search-box:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+/* 📜 Category List */
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* 🏷️ Category Item */
+
+.sidebar-item {
+    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+
+/* 🖱️ Hover Effect */
+
+.sidebar-item:hover {
+    background: #007bff;
+    color: white;
+    transform: translateX(5px);
+}
+
+
+/* ✅ Selected (Active) Category */
+
+.sidebar-item.active {
+    background: #0056b3;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* 🎨 Image Styling */
+
+.category-image {
+    width: 100%;
+    max-height: 120px;
+    object-fit: contain;
+    display: block;
+    margin-top: 8px;
+    border-radius: 6px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+/* 🚀 Fade-in Animation */
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
